@@ -12,7 +12,20 @@ The steps include:
 6. Recognition
 7. Transcription
 
-The main script, which executes these steps, is *play_asr.m*
+The main script of this repository, which executes all these steps in comparatively few lines of code, is *play_asr.m*
+To learn the concepts a single script is suitable.
+
+To perform (even small) experiments it is better to partition the problem.
+A possible partition is pesented in the following files:
+* *play_prepare.m*
+* *play_training.m*
+* *play_recognition.m*
+* *play_evaluation.m*
+
+The whole chain can be run with the script *play_demo.m*.
+
+In addition, the learned model can be used to illustrate Viterbi-decoding in a live recognition session with the script *play_live.m*.
+This script requires a working copy of playrec.
 
 ## Purpose
 This educational code was partly taken from my lecture with the aim to be reasonably functional, compact _and_ understandable.
